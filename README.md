@@ -4,21 +4,17 @@ Python VBO - The Python VBO facilitates seamless integration of Python scripting
 
 #### Here are the installation instructions for using the Python VBO in Blue Prism: ####
 
-Download and Install Python:<br><br>
-
-Download Python from the official website: python.org<br>
+Download and Install Python:<br>
+Download Python from the official website: python.org 
 Follow the installation instructions provided by the Python installer.<br><br>
 Download VBO Files:<br>
-
-Download the .bprelease file and Python.Runtime.dll from the repository.<br>
+Download the .bprelease file and Python.Runtime.dll from the repository.<br><br>
 Place Python.Runtime.dll File:<br>
-
-Place the Python.Runtime.dll file in the root directory where Blue Prism is installed.<br>
+Place the Python.Runtime.dll file in the root directory where Blue Prism is installed.<br><br>
 Import the .bprelease File:<br>
-
 Open Blue Prism and navigate to File.<br>
 click on Import and select Relase.<br>
-Choose the downloaded .bprelease file and import it into Blue Prism.<br>
+Choose the downloaded .bprelease file and import it into Blue Prism.<br><br>
 Configure Python Instance:<br>
 
 Open the Blue Prism Example-Python process .<br>
