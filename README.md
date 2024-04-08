@@ -7,10 +7,10 @@ Python VBO - The Python VBO facilitates seamless integration of Python scripting
 #### Create Instance ####
 This action is used to create an instance of the PythonEngine and should be called before using other actions in this VBO.<br>
 Input Parameters: <br>
-`Python Root Folder Path: Path where Python is installed. 
+> Python Root Folder Path: Path where Python is installed. 
 IsDebugMode: Boolean, if enabled, console output will be shown. 
 Python Version: Python installed version number. Global Script Execution 
-Time Out: Timeout for each action execution.`
+Time Out: Timeout for each action execution. >
 
 #### Close Instance ####
 This action closes the instance created by the "Create Instance" action.
