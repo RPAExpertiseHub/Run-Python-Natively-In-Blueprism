@@ -25,12 +25,12 @@ Error_Message: Text containing exception details if Success is false. `
 #### Execute Py Script File (No Output) ####
 This action executes a Python script file (.py/.pyc).
 Input Parameters:
-`Python_ScriptFilePath: (Text) - Path to the Python script file.
-Callback Function Name*: (Text) - Function name which should call from script.
-Parameters**: (Collection) - parameters to the function.`
-Output Variables:
-`Success: Boolean indicating whether the script executed successfully. 
-Error_Message: Text containing exception details if Success is false. `
+`Python_ScriptFilePath: (Text) - Path to the Python script file.<br>
+Callback Function Name*: (Text) - Function name which should call from script.<br>
+Parameters**: (Collection) - parameters to the function.`<br>
+Output Variables:<br>
+`Success: Boolean indicating whether the script executed successfully. <br>
+Error_Message: Text containing exception details if Success is false. `<br>
 5. Get Text (and other data types) 
 These actions execute a Python script and retrieve the output as various data types (Text, Binary, Collection, Date, DateTime, Flag, Image, Number, Time, TimeSpan).
 
