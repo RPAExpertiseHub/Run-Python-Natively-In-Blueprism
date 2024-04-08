@@ -1,12 +1,12 @@
 # Run Python Natively In Blueprism #
 
-Python VBO - Blue Prism Python Script Runner VBO Overview The Python VBO facilitates seamless integration of Python scripting within Blue Prism processes. This VBO leverages the PythonNet library to execute Python scripts directly within Blue Prism, enabling users to harness the power of Python alongside Blue Prism's automation capabilities.
+Python VBO - The Python VBO facilitates seamless integration of Python scripting within Blue Prism processes. This VBO leverages the PythonNet library to execute Python scripts directly within Blue Prism, enabling users to harness the power of Python alongside Blue Prism's automation capabilities.
 
 ### Actions ###
 
 #### Create Instance ####
-This action is used to create an instance of the PythonEngine and should be called before using other actions in this VBO.
-Input Parameters: 
+This action is used to create an instance of the PythonEngine and should be called before using other actions in this VBO.<br>
+Input Parameters: <br>
 `Python Root Folder Path: Path where Python is installed. 
 IsDebugMode: Boolean, if enabled, console output will be shown. 
 Python Version: Python installed version number. Global Script Execution 
