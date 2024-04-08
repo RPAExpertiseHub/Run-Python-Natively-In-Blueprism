@@ -2,6 +2,36 @@
 
 Python VBO - The Python VBO facilitates seamless integration of Python scripting within Blue Prism processes. This VBO leverages the PythonNet library to execute Python scripts directly within Blue Prism, enabling users to harness the power of Python alongside Blue Prism's automation capabilities.
 
+#### Here are the installation instructions for using the Python VBO in Blue Prism: ####
+
+Download and Install Python:<br><br>
+
+Download Python from the official website: python.org<br>
+Follow the installation instructions provided by the Python installer.<br><br>
+Download VBO Files:<br>
+
+Download the .bprelease file and Python.Runtime.dll from the repository.<br>
+Place Python.Runtime.dll File:<br>
+
+Place the Python.Runtime.dll file in the root directory where Blue Prism is installed.<br>
+Import the .bprelease File:<br>
+
+Open Blue Prism and navigate to File.<br>
+click on Import and select Relase.<br>
+Choose the downloaded .bprelease file and import it into Blue Prism.<br>
+Configure Python Instance:<br>
+
+Open the Blue Prism Example-Python process .<br>
+Double-click on the "Create Instance" action.<br>
+Provide the following input parameters:<br>
+Python Root Folder Path: Path where Python is installed.<br>
+IsDebugMode: Boolean, set it to true if you want to see console output.<br>
+Python Version: Python installed version number.<br>
+Global Script Execution Time Out: Timeout for each action execution.<br>
+Save the changes to the action.<br><br>
+
+Execute the process to verify that the Python VBO is functioning correctly.<br><br>
+
 ### Actions ###
 
 #### Create Instance ####
@@ -36,7 +66,7 @@ These actions execute a Python script and retrieve the output as various data ty
 Input Parameters:<br>
 <b>PyScriptTextOrPyFilePath:</b> Text or file path of the Python script. <br>
 <b>Callback Function Name:</b> Name of the callback function. <br>
-Parameters:</b> Collection of parameters. <br>
+<b>Parameters:</b> Collection of parameters. <br>
 Output Variables:<br>
 <b>Success:</b> Boolean indicating whether the script executed successfully.<br>
 <b>Error_Message:</b> Text containing exception details if Success is false.<br>
@@ -49,7 +79,7 @@ Output Variables: <br>
 
 #### Set Module Search Path ####
 This action sets the search path where Python modules are stored.<br>
-<b>Input Parameters: <br>
+Input Parameters: <br>
 <b>Module_Search_Path:</b> Search path for modules. <br><br>
 
 #### Install Pip Module ####
