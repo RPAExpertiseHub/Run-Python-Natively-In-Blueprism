@@ -14,7 +14,7 @@ This repository contains the source code for a custom Python Visual Business Obj
 * Python: Ensure you have Python installed (both 32-bit and 64-bit versions are supported, depending on the VBO version used).
 * Blue Prism: Blue Prism installation with the ability to import custom VBOs.
 * .NET Types Support: Make sure that the output types used in the Python script are compatible with Blue Prism’s .NET types.
-* Install pythonnet module using pip (ex. pip install pythonnet)
+* Install pythonnet module using pip (e.g., pip install pythonnet)
 ~~~
 Note: The Python runtime (32-bit or 64-bit) must match the bit version of the VBO in Blue Prism. For example, if using a 32-bit VBO, your Python installation must also be 32-bit.
 ~~~
@@ -23,7 +23,7 @@ Note: The Python runtime (32-bit or 64-bit) must match the bit version of the VB
 1. Download the Repository: Clone or download the repository from GitHub.
 
 ```
-git clone https://github.com/your-username/python-vbo-for-blueprism.git
+git clone [https://github.com/RPAExpertiseHub/Run-Python-Natively-In-Blueprism.git]
 ```
 2. Import the VBO into Blue Prism:
 
