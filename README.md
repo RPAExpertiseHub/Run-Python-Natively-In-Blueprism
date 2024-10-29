@@ -68,8 +68,14 @@ def get_text():
  * Description: Executes a Python script and retrieves a Number output (decimal).
  * Example Python Script:
 ```python
-def get_number():
-    return 42.0
+import clr
+clr.AddReference("System")
+from System import Decimal
+
+def getNumber(a,b):
+ output = Decimal(int(a.ToString())+int(b.ToString()))
+ return output
+ 
 ```
 ---------------
 ## 4. Get Flag ##
