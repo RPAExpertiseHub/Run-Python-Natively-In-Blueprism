@@ -9,7 +9,7 @@ This repository contains the source code for a custom Python Visual Business Obj
 * Package Management: Install and uninstall Python packages using pip.
 * Dynamic Parameter Support: Pass data dynamically to Python functions via Blue Prism’s Collection type.
 * Timeouts and Error Handling: Set timeouts for script execution and capture error details.
-
+----
 # Requirements #
 * Python: Ensure you have Python installed (both 32-bit and 64-bit versions are supported, depending on the VBO version used).
 * Blue Prism: Blue Prism installation with the ability to import custom VBOs.
@@ -23,7 +23,7 @@ Note: The Python runtime (32-bit or 64-bit) must match the bit version of the VB
 1. Download the Repository: Clone or download the repository from GitHub.
 
 ```
-git clone [https://github.com/RPAExpertiseHub/Run-Python-Natively-In-Blueprism.git]
+git clone https://github.com/RPAExpertiseHub/Run-Python-Natively-In-Blueprism.git
 ```
 2. Import the VBO into Blue Prism:
 
@@ -134,6 +134,7 @@ from System import TimeSpan
 def get_time_span():
     return TimeSpan.FromMinutes(5)
 ```
+----
 ## 9. Get Collection ##
  * Description: Executes a Python script and retrieves a Collection (DataTable).
  * Example Python Script:
@@ -153,6 +154,7 @@ def get_collection():
     dt.Rows.Add(row)
     return dt
 ```
+----
 ## 10. Install Pip Module ##
  * Description: Installs a Python package using pip.
  * Parameters: Package name (Text).
@@ -168,8 +170,10 @@ Package Name: "numpy"
 ~~~
 Package Name: "numpy"
 ~~~
+----
 ## 12. Get ModuleList ##
  * Description: Retrieves a list of installed Python packages.
+----
 ## 13. Close Instance ##
  * Description: Shuts down the Python environment in Blue Prism. This should be called after all Python processing is complete to release resources.
 
@@ -178,12 +182,15 @@ Package Name: "numpy"
 # Example Blue Prism Process #
 To demonstrate each action, an example Blue Prism process is included in the repository. This process shows how to:
 
-1. Initialize Python with CreateInstance.
+1. Initialize Python with Create Instance.
 2. Run Python Scripts using various actions (e.g., GetText, GetNumber, GetCollection).
 3. Install/Uninstall Modules dynamically using Install Pip Module and Uninstall Pip Module.
 4. Close the Python Instance using CloseInstance.
-
+----
 # Troubleshooting #
  * Bit Version Mismatch: Ensure that the Python runtime and VBO have matching bit versions (32-bit or 64-bit). If they don’t match, the Python environment will fail to initialize.
  * DLL Path Errors: Double-check the path to python.dll in the CreateInstance action. It should point to your Python installation directory.
  * Module Import Errors: Ensure that any modules you need are installed in the Python environment by using the Install Pip Module action.
+----
+# License #
+This project is licensed under the MIT License. See the LICENSE file for more details.
